@@ -708,7 +708,6 @@ class GameWorld:
                 if os.path.exists(file_name): os.remove(file_name)
             self.menu.on_delete_plugin(self.name)
         elif list(self.renamed[True].keys()) != list(self.renamed[True].values()) or len(self.renamed[False]) == 0:
-            print(1)
             circuit_files = os.listdir(CIRCUITS_PATH)
             for circuit_file in circuit_files:
                 with open(CIRCUITS_PATH + circuit_file, 'r', encoding='utf-8') as f:
